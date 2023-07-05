@@ -1,5 +1,19 @@
 function isPalindrome(word) {
   // Write your algorithm here
+   const leng = word.length;
+    //loop thru half of the string
+    for (let x = 0; x < leng / 2; x++) {
+        if (word[x] !== word[leng - 1 - x]) {
+            return false;
+        } else {
+            return true;
+        }
+
+    }
+    word = prompt('Enter a word:')
+        //call the function
+    console.log(isPalindrome(robot));
+
 }
 
 /* 
